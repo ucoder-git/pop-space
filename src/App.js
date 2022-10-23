@@ -1,5 +1,6 @@
 import './App.css';
 import ChildComponent from './child.js';
+import TimerComponent from './timer';
 
 function App() {
   const text = "팝샵 여러분 화이팅!";
@@ -15,6 +16,7 @@ function App() {
     <h2>{text}</h2>
     {sayHello()}
     <div onClick={sayHello2}>클릭해주세요</div>
+    <TimerComponent/>
     <ChildComponent name="팝샵" age={30}/>
     <ChildComponent name="스페이스" age={20}/>
     <ChildComponent name="황샘" age={40}/>
